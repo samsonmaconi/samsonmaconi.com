@@ -1,0 +1,22 @@
+a.ButtonLink:not(:disabled):hover, button.ButtonLink:not(:disabled):hover {
+  background-image: none !important;
+  color: #397071; }
+  a.ButtonLink:not(:disabled):hover:not(:disabled):active, button.ButtonLink:not(:disabled):hover:not(:disabled):active {
+    color: #ffd700; }
+
+a.ButtonLink.light, button.ButtonLink.light {
+  border-color: white;
+  color: white; }
+
+a.ButtonLink.dark, button.ButtonLink.dark {
+  border-color: black;
+  color: black; }
+  a.ButtonLink.dark:not(:disabled):hover, button.ButtonLink.dark:not(:disabled):hover {
+    background-color: black;
+    color: #ffd700; }
+
+.tiltButton {
+  display: inline-block; }
+
+.Tilt-inner {
+  transform: translateZ(20px); }

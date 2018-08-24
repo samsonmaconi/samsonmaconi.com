@@ -1,0 +1,14 @@
+/* external css: flickity.css */
+.Slider .carousel-cell {
+  width: 100%;
+  margin-right: 10em;
+  padding: 1em;
+  background: transparent;
+  border-radius: 5px;
+  counter-increment: carousel-cell; }
+  .Slider .carousel-cell.is-selected {
+    text-align: center; }
+
+.Slider .flickity-prev-next-button {
+  width: 2em;
+  height: 2em; }

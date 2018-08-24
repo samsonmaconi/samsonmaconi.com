@@ -1,0 +1,13 @@
+#profile-grid {
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: grayscale(100%); }
+  #profile-grid:hover {
+    animation: getColor 800ms;
+    filter: grayscale(0%); }
+
+@keyframes getColor {
+  from {
+    filter: grayscale(100%); }
+  to {
+    filter: grayscale(0%); } }

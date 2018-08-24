@@ -1,0 +1,19 @@
+.navbar a.nav-link {
+  font-weight: 400; }
+
+.navbar .logo {
+  height: 3.125em; }
+
+.navbar.bg-black {
+  background-color: rgba(0, 0, 0, 0.5); }
+
+.navbar.navbar-light .navbar-nav .nav-link {
+  color: white; }
+
+@media (max-width: 576px) {
+  .navbar .nav-item {
+    margin-right: 0; }
+  .navbar.fixed-top {
+    position: relative; }
+  .navbar.bg-black {
+    background-color: black; } }

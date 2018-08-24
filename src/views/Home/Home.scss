@@ -1,0 +1,36 @@
+.Home{
+    &>.quotes{
+        .row{
+            min-height: 100vh;
+        }
+        font-weight: 100;
+        background-color: rgba(0, 0, 0, 0.5);
+        background-blend-mode: darken;
+    }
+    &>.contact {
+        background-color: rgba(0, 0, 0, 0.5);
+        background-blend-mode: darken;
+    }
+    .Section > h2{
+        font-family: 'Poiret One', cursive;
+  
+    }
+
+      /* dots are lines */
+    .flickity-page-dots {
+        bottom: .03em;
+        // text-align: right;
+        & .dot {
+        height: 0.20em;
+        width: 5em;
+        margin: 0px;
+        border-radius: 0;
+        &:last-child{
+            margin-right: 1em;
+        }
+        }
+        & .dot.is-selected {
+        background: #930717;
+        }
+    }
+}

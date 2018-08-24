@@ -1,0 +1,33 @@
+.About {
+    .Favorites .text, .Random .text{
+      font-size: 1.5em;
+      p{
+        
+      }
+      .fav{
+        font-family: 'Gloria Hallelujah', cursive;
+      }
+    }
+    .Section h2{
+      font-family: 'Poiret One', cursive;
+
+    }
+
+    &>.Favorites {
+      -webkit-transform: translate3d(0,0,0);
+      background-color: rgba(0, 0, 0, 0.5);
+      background-blend-mode: darken;
+    }
+
+    &>.contact {
+      background-color: rgba(0, 0, 0, 0.5);
+      background-blend-mode: darken;
+    }
+    
+    .flickity-page-dots {
+      bottom: .03em;
+      & .dot.is-selected {
+        background: #000000;
+      }
+    }
+  }

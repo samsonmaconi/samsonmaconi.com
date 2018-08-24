@@ -1,0 +1,22 @@
+.HeaderSub {
+    height: 100%;
+    min-height: 350px;
+    // background-color: rgba(0, 0, 0, 0.5);
+    // background-blend-mode: overlay;
+    .tagline, .title{
+        color: white;
+    }
+    // & > .d-flex{
+    //     height: 100%;
+    // }
+    .button {
+        background-color: rgba(0, 0, 0, 0.5);
+        background-blend-mode: overlay;
+        .row{
+            font-weight: 100;
+        }
+    }
+}
+
+
+// .animated{animation-fill-mode: none !important;}

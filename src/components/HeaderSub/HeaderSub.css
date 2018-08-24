@@ -1,0 +1,10 @@
+.HeaderSub {
+  height: 100%;
+  min-height: 350px; }
+  .HeaderSub .tagline, .HeaderSub .title {
+    color: white; }
+  .HeaderSub .button {
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: overlay; }
+    .HeaderSub .button .row {
+      font-weight: 100; }

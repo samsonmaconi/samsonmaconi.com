@@ -1,0 +1,49 @@
+$color1: black;
+$color2: #397071;
+$colorErr: rgb(255, 0, 0);
+
+.ContactForm{
+
+    #formError{
+        font-size: 0.8em;
+        border-radius: 2px;
+        color: white;
+        padding: 3px;
+        margin: 3px;
+        background-color: $colorErr;
+    }
+
+    .has-error{
+        border-color: $colorErr !important;
+        border-width: 2px !important;
+        border-style: dashed !important;
+    }
+
+    input, textarea{
+        outline: none;
+        width: 100%;
+    }
+    label{
+        font-weight: bold;
+    }
+    input{
+        border-width: 0 0 1px 0;
+        border-color: $color1;
+        &:focus{
+             border-width: 0 0 2px 0;
+             border-color: $color2;
+        }
+    }
+    textarea, input.subject{
+        border-width: 1px;
+        border-color: $color1;
+        &:focus{
+             border-width: 2px;
+             border-color: $color2;
+        }
+    }
+    .thankyou{
+        font-weight: 400;
+        font-family: 'Gloria Hallelujah', cursive;
+    }
+}

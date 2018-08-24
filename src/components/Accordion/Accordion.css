@@ -1,0 +1,36 @@
+.Accordion {
+  margin-top: 3em;
+  margin-bottom: 3em; }
+  .Accordion > .content {
+    margin-left: 2em;
+    margin-right: 2em; }
+    .Accordion > .content > * > :nth-child(1) {
+      border: solid #dbdbdb;
+      border-width: 0px 0px 1px 0px;
+      color: black;
+      font-weight: 400;
+      text-decoration: none;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      padding: 0.5em;
+      display: block; }
+      .Accordion > .content > * > :nth-child(1):hover {
+        color: #930717;
+        border-color: #397071; }
+      .Accordion > .content > * > :nth-child(1):not(.collapsed) {
+        color: #397071;
+        border-bottom: 2px #930717 solid;
+        font-weight: 600;
+        transform: scale(1.1); }
+        .Accordion > .content > * > :nth-child(1):not(.collapsed):hover {
+          color: #930717; }
+    .Accordion > .content > * > :nth-child(n+2) {
+      padding: 0.5em;
+      margin-left: 1em;
+      border: dotted #dbdbdb;
+      border-width: 0px 0px 1px 0px; }
+
+@media (max-width: 576px) {
+  .Accordion > .content > * > :nth-child(n+2) {
+    padding: 0;
+    margin-left: 0; } }

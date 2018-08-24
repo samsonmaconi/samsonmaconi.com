@@ -1,0 +1,27 @@
+.logoAni1 {
+  animation-delay: 1000ms;
+  animation-duration: 3s; }
+
+.bounceInUp {
+  animation-duration: 1000ms; }
+
+.logoAni2b {
+  animation-delay: 1500ms;
+  animation-duration: 1000ms; }
+  .logoAni2b .btn {
+    animation-iteration-count: infinite; }
+
+.cover-container {
+  position: absolute;
+  display: table;
+  height: 100%;
+  width: 100%;
+  z-index: 1500; }
+  .cover-container h1 {
+    color: #ffffff; }
+    .cover-container h1:hover {
+      color: #fffbca; }
+
+.cover-center {
+  display: table-cell;
+  text-align: center; }

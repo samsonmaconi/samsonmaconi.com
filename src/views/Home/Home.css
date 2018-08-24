@@ -1,0 +1,24 @@
+.Home {
+  /* dots are lines */ }
+  .Home > .quotes {
+    font-weight: 100;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: darken; }
+    .Home > .quotes .row {
+      min-height: 100vh; }
+  .Home > .contact {
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: darken; }
+  .Home .Section > h2 {
+    font-family: 'Poiret One', cursive; }
+  .Home .flickity-page-dots {
+    bottom: .03em; }
+    .Home .flickity-page-dots .dot {
+      height: 0.20em;
+      width: 5em;
+      margin: 0px;
+      border-radius: 0; }
+      .Home .flickity-page-dots .dot:last-child {
+        margin-right: 1em; }
+    .Home .flickity-page-dots .dot.is-selected {
+      background: #930717; }

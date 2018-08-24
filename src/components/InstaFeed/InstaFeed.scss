@@ -1,0 +1,83 @@
+$color1: #930717;
+$color2: #397071;
+$color3: #ffd700;
+$blurLength: 3px;
+$glowSize: 110%;
+
+ .InstaFeed{
+    // border: .2em black solid;
+    &:hover{
+        .instafeed__item{
+            filter: blur($blurLength) grayscale(100%);
+            &.active{
+                -webkit-transform: translate3d(0,0,0);
+                z-index: 500;
+                animation: getColorBlur 500ms;
+                filter: blur($blurLength) grayscale(0%) brightness($glowSize);
+                transform: scale(1.1);
+                .instafeed__item__background{
+                    border: .1em $color2 solid;
+                }
+            }
+            &:hover, &.active:hover{
+                -webkit-transform: translate3d(0,0,0);
+                z-index: 501;
+                animation: none;
+                transform: scale(1.5);
+                filter: blur(0px) grayscale(0%);
+                .instafeed__item__background{
+                    border: .1em $color1 solid;
+                }
+            }
+        }
+    }
+    .instafeed__item{
+        .instafeed__item__background{
+            width: 100%;
+            padding: 2px;
+        }
+        filter: grayscale(100%);
+        &.active{
+            -webkit-transform: translate3d(0,0,0);
+            z-index: 500;
+            animation: getColor1 500ms;
+            filter: grayscale(0%) brightness($glowSize);
+            transform: scale(1.1);
+            .instafeed__item__background{
+                border: .1em $color2 solid;
+            }
+        }
+        &:hover, &.active:hover{
+            -webkit-transform: translate3d(0,0,0);
+            z-index: 501;
+            transform: scale(1.5);
+            .instafeed__item__background{
+                border: .1em $color1 solid;
+            }
+        }
+
+    }
+    @keyframes getColor1 {
+        from {
+            filter: grayscale(100%) brightness(100%);
+            // transform: scale(1);
+        }
+    
+        to {
+            filter: grayscale(0%) brightness($glowSize);
+            // transform: scale(1.2);
+        }
+    }
+    @keyframes getColorBlur {
+        from {
+            filter: blur($blurLength) grayscale(100%) brightness(100%);
+            // transform: scale(1);
+        }
+    
+        to {
+            filter: blur($blurLength) grayscale(0%) brightness($glowSize);
+            // transform: scale(1.2);
+        }
+    }
+ }
+

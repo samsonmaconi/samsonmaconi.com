@@ -1,0 +1,58 @@
+
+.Section {
+    position: relative;
+    > div{
+        display: flex;
+    }
+    // -webkit-transform: translate3d(0,0,0);
+    & .heading{
+        writing-mode: vertical-lr;
+        & .section-header{
+            font-weight: 500;
+            font-size: 3em;
+            height: 100%;
+        }
+    }
+    & .headingHorizontal{
+        color: #397071;
+    }
+    & .footing.horizontal span{
+        text-align: right;
+    }
+    & .footing{
+         .section-footer{
+            font-size: 2em;
+        }
+       a{
+            text-decoration: none;
+            animation: linkGo 800ms infinite;
+        }
+        span:hover{
+            a{
+                animation-iteration-count: infinite;
+            }
+            .linkToolTip{
+                display: none;
+            }
+        }
+        .linkToolTip{
+            position: absolute;
+            bottom: 2em;
+            right: 5em;
+            display: inline;
+            font-size: 0.3em;
+        }
+    }
+    
+}
+
+@keyframes linkGo {
+    from {
+      opacity: 1;
+    }
+  
+    to {
+      opacity: 0.4;
+      transform: translate3d(10px, 0, 0);
+    }
+  }

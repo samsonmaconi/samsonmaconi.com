@@ -1,0 +1,36 @@
+.Section {
+  position: relative; }
+  .Section > div {
+    display: flex; }
+  .Section .heading {
+    writing-mode: vertical-lr; }
+    .Section .heading .section-header {
+      font-weight: 500;
+      font-size: 3em;
+      height: 100%; }
+  .Section .headingHorizontal {
+    color: #397071; }
+  .Section .footing.horizontal span {
+    text-align: right; }
+  .Section .footing .section-footer {
+    font-size: 2em; }
+  .Section .footing a {
+    text-decoration: none;
+    animation: linkGo 800ms infinite; }
+  .Section .footing span:hover a {
+    animation-iteration-count: infinite; }
+  .Section .footing span:hover .linkToolTip {
+    display: none; }
+  .Section .footing .linkToolTip {
+    position: absolute;
+    bottom: 2em;
+    right: 5em;
+    display: inline;
+    font-size: 0.3em; }
+
+@keyframes linkGo {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.4;
+    transform: translate3d(10px, 0, 0); } }

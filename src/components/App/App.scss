@@ -1,0 +1,430 @@
+@import '../../style/bootstrap';
+@import '../../style/animate';
+
+@import url('https://fonts.googleapis.com/css?family=Cinzel+Decorative|Codystar|Gloria+Hallelujah|Monoton|Poiret+One|Ruthie');
+$font-family-sans-serif: "Nunito Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+:root{
+  --font-family-sans-serif: #{inspect($font-family-sans-serif)};
+} 
+
+$white:    #fff !default;
+$gray-100: #f8f9fa !default;
+$gray-200: #f7f7f9 !default;
+$gray-300: #eceeef !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #919aa1 !default;
+$gray-700: #55595c !default;
+$gray-800: #343a40 !default;
+$gray-900: #1a1a1a !default;
+$black:    #000 !default;
+
+$themecolor1: #397071;
+$themecolor2: #930717;
+$themecolor3: #C4908F;
+$themecolor4: #ffd700;
+$themecolor5: #0129CE;
+//trans
+$trans_level: 1;
+$themecolor1-trans: rgba($themecolor1, $trans_level);
+$themecolor2-trans: rgba($themecolor2, $trans_level);
+$themecolor3-trans: rgba($themecolor3, $trans_level);
+$themecolor4-trans: rgba($themecolor4, $trans_level);
+$themecolor5-trans: rgba($themecolor5, $trans_level);
+$white-trans: rgba($white, $trans_level);
+
+
+body {
+    background: $white;
+    color: $gray-900;
+    font-weight: 300;
+    & a {
+      text-decoration: none;
+    }
+}
+
+::selection {
+  background: $themecolor4-trans;
+}
+
+//Theme Colors
+.themecolor1{
+  color: $themecolor1;
+}
+.themecolor2{
+  color: $themecolor2 !important;
+}
+.themecolor3{
+  color: $themecolor3 !important;
+}
+.themecolor4{
+  color: $themecolor4 !important;
+}
+.themecolor5{
+  color: $themecolor5 !important;
+}
+.black{
+  color: $black !important;
+}
+.white{
+  color: $white;
+}
+
+.bg-themecolor1{
+  background-color: $themecolor1-trans;
+}
+.bg-themecolor2{
+  background-color: $themecolor2-trans !important;
+}
+.bg-themecolor3{
+  background-color: $themecolor3-trans !important;
+}
+.bg-themecolor4{
+  background-color: $themecolor4-trans !important;
+}
+.bg-themecolor5{
+  background-color: $themecolor5-trans !important;
+}
+.bg-black{
+  background-color: $black;
+}
+.bg-white{
+  background-color: $white;
+}
+
+//fa-heart
+i[class*="fa-heart"]#love{
+  color: $themecolor2;
+  &:hover{
+    transform: scale(1.5);
+    animation: heart-pulse 400ms infinite;
+    animation-timing-function: linear;
+  }
+}
+
+//HorizontalRule
+hr {
+  max-width: 50%;
+  height: 2px;
+  border: 1px $themecolor1 dotted;
+  border-left-style: none;
+  border-right-style: none;
+}
+
+//Cover page
+.cover-container {
+  position: absolute;
+  display: table;
+  height:100%;
+  width:100%;
+  z-index: 1500;
+  & h1{
+    color: #ffffff !important;
+    font-weight: 100;
+    &:hover{
+    color: $themecolor1 !important;
+    }
+  }
+}
+
+
+//Navbar
+.navbar{
+  & a:hover{
+    transform: scale(1.1);
+      color: $themecolor1 !important;
+  }
+}
+
+.bg-dark {
+  background-color: rgba(0, 0, 0, 0.9) !important;
+}
+
+.bg-light {
+  background-color: rgb(255, 255, 255) !important;
+}
+
+.themepulse{
+  animation: theme-pulse 1000ms infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+.themepulse-hover{
+  &:hover{
+    animation: theme-pulse 1000ms infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+  }
+}
+
+.navbar-nav .active{
+  border-bottom-width: 3px;
+  border-bottom-color: $themecolor2;
+  border-bottom-style: groove;
+}
+
+
+//Header
+.Header{
+  #next_btn{
+    border-color: $themecolor1;
+    &:hover{
+      background-color: $themecolor1-trans;
+    }
+    &:active{
+      background-color: $themecolor4-trans;
+    }
+    & span{
+      color: $themecolor1;
+    }
+  }
+}
+
+.HeaderSub, .Header{
+  & .title.HeaderTitle, .title.HeaderTitle h1{
+    color: white;
+    font-weight: 500;
+    .x{
+      display: inline-block;
+      font-weight: 100;
+      color: $themecolor1;
+      &:hover{
+        animation: rotates 500ms;
+        transform: rotate(360deg);
+      }
+    }
+  }
+  & .tagline{
+      letter-spacing: 3px;
+      font-family: 'Poiret One', cursive;
+      text-transform: uppercase;
+      font-size: 1.25em;
+      .x{
+        font-weight: 100;
+        color: $themecolor1;
+      }
+  }
+}
+@keyframes rotates{
+  0% {transform: rotate(0deg);}
+  100% {transform: rotate(360deg);}
+}
+
+
+//Footer
+footer {
+  color: white;
+  background-color: black;
+  & a{
+    color: $gray-500;
+  }
+  & a:hover{
+    animation: hover-scale 250ms;
+    animation-fill-mode: forwards;
+    color: $themecolor1 !important;
+  }
+  & .copyright{
+    font-size: .8em;
+    color: $gray-500;
+    & a{
+      color: $gray-500;
+    }
+  }
+  :hover{
+    i[class*="fa-heart"]{
+      transform: scale(1.5);
+      animation: heart-pulse 800ms infinite;
+      animation-timing-function: linear;
+    }
+  }
+}
+
+//Particles
+.Particles{
+  &#particles-js{
+    background-color: $themecolor1 !important;
+  }
+}
+
+.navtab {
+  background-color: $white-trans;
+  border: 1px solid $gray-400;
+  &:hover{
+    color: $themecolor1;
+    transform: scale(1.1);
+  }
+}
+
+//ProfileGrid
+.profile-grid{
+  // border: $themecolor1 1px solid;
+}
+
+//Section
+.Section{
+  .img-fluid {
+    max-height: 100vh;
+    width: auto;
+  }
+  &.ContactCall {
+    h3, h2{
+      color: $white;
+      font-family: 'Poiret One', cursive;
+      text-transform: none;
+    }
+    & span{
+      color: $themecolor4;
+      font-weight: 400;
+      font-family: 'Gloria Hallelujah', cursive;
+    }
+    & Link{
+      color: $themecolor1;
+    }
+  }
+  &.quotes {
+    -webkit-transform: translate3d(0,0,0);
+    color: $white;
+    font-family: 'Poiret One', cursive;
+    & span{
+      color: $themecolor4;
+    font-family: 'Gloria Hallelujah', cursive;
+    }
+  }
+  & .me {
+    border: double 0.3em $themecolor1;
+  }
+  & .section-header{
+    color: $white;
+    background-color: $themecolor1;
+  }
+  & .more-link {
+    color: $themecolor1-trans;
+  }
+}
+
+
+@keyframes theme-pulse {
+  0% {color: $themecolor1;}
+  100% {color: white;}
+}
+
+@keyframes heart-pulse {
+  50% {color: $themecolor2;}
+  100% {color: rgb(0, 0, 0);}
+}
+
+@keyframes hover-scale {
+  0% {transform: scale(1);}
+  100% {transform: scale(1.5);}
+}
+
+
+
+// @media (min-width: 0px) {
+//   html {
+//     font-size: 0.3rem !important;
+//   }
+// }
+
+// @media (min-width: 300px) {
+//   html {
+//     font-size: 0.45rem !important;
+//   }
+// }
+
+// @media (min-width: 576px) {
+//   html {
+//     font-size: 0.6rem !important;
+//   }
+// }
+
+// @media (min-width: 768px) {
+//   html {
+//     font-size: 0.7rem !important;
+//   }
+// }
+
+// @media (min-width: 992px) {
+//   html {
+//     font-size: 0.9rem !important;
+//   }
+// }
+
+// @media (min-width: 1200px) {
+//   html {
+//     font-size: 1rem !important;
+//   }
+// }
+
+// @media (min-width: 2560px) {
+//   html {
+//     font-size: 2rem !important;
+//   }
+// }
+
+@media (min-width: 0px) {
+  .display-1{
+    font-size: 3.5em;
+  }
+  .display-4{
+    font-size: 1.5em;
+  }
+}
+
+@media (min-width: 576px) {
+  .display-1{
+    font-size: 4em;
+  }
+  .display-4{
+    font-size: 2em;
+  }
+}
+
+@media (min-width: 768px) {
+    //Scrollbar
+  ::-webkit-scrollbar {
+    width: 2px;  /* remove scrollbar space */
+    background: black;  /* optional: just make scrollbar invisible */
+  }
+  /* optional: show position indicator in grey */
+  ::-webkit-scrollbar-thumb {
+    background: #343a40;
+  }
+  .display-1{
+    font-size: 4.5em;
+  }
+  .display-4{
+    font-size: 2.5em;
+  }
+}
+
+@media (min-width: 850px) {
+    //Scrollbar
+  ::-webkit-scrollbar {
+    width: 2px;  /* remove scrollbar space */
+    background: black;  /* optional: just make scrollbar invisible */
+  }
+  /* optional: show position indicator in grey */
+  ::-webkit-scrollbar-thumb {
+    background: #343a40;
+  }
+}
+
+@media (min-width: 992px) {
+  .display-1{
+    font-size: 6em;
+  }
+  .display-4{
+    font-size: 3em;
+  }
+}
+
+@media (min-width: 1200px) {
+  .display-1{
+    font-size: 6em;
+  }
+  .display-4{
+    font-size: 3em;
+  }
+}

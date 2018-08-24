@@ -1,0 +1,111 @@
+$color_expert : #ffa600;
+$color_advanced : #0000ff;
+$color_intermediate : #00ff00;
+
+.SkillsSection{
+    .carousel-cell {
+        width: 80%;
+        svg, img {
+        filter: grayscale(100%);
+            &:hover{
+                animation: getColor 100ms;
+                filter: grayscale(0%);
+            }
+        }
+    }
+    .skill{
+        &::before{
+            content: "";
+            position: absolute;
+            bottom: 100%; 
+            left: .5em;
+            width: 0.5em;
+            height: 0.5em;
+            border-radius: 50%;
+            border-width: .15em;
+            margin-left: -0.3em;
+            border-style: solid;
+        }
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .legendTitle{
+        font-variant: small-caps;
+        font-weight: bold;
+        text-decoration: underline;
+    }
+
+    .legendItem{
+        font-variant: small-caps;
+        &::before{
+            content: "";
+            margin: 0.5em;
+            width: 0.7em;
+            height: 0.7em;
+            border-width: .15em;
+            border-style: solid;
+            font-size: .8em;
+        }
+    }
+
+    .skillLevel-1{
+        &::before{
+            border-color: $color_expert;
+        }
+    }
+    .skillLevel-2{
+        &::before{
+            border-color: $color_advanced;
+        }
+    }
+    .skillLevel-3{
+        &::before{
+            border-color: $color_intermediate;
+        }
+    }
+    #Legend {
+        position: absolute;
+        bottom: 0.25em;
+        left: 0.25em;
+        display: inline-block;
+        font-size: 0.8em;
+        padding: .5em;
+        background-color: #ffffffcc;
+        // border: solid 0.0625em #ced4da;
+    }
+}
+
+@keyframes getColor {
+    from {
+        filter: grayscale(100%);
+    }
+  
+    to {
+        filter: grayscale(0%);
+    }
+  }
+
+
+  @media (max-width: 400px) {
+    .SkillsSection{
+        #Legend {
+            display: none;
+        }
+        .skill{
+            &::before{
+                border: none;
+            }
+        }
+        .carousel-cell {
+            width: 100%;
+            svg, img {
+            filter: grayscale(0%);
+            }
+        }
+    }
+  }

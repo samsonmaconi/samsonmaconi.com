@@ -1,0 +1,9 @@
+.navbarfiller {
+  /* Margin top for sticky nav by Navbar height */
+  height: 76.75px;
+  background-color: black; }
+
+.footerfiller {
+  /* Margin bottom for sticky nav by Footer height */
+  margin-bottom: 67.90px;
+  height: 0.1px; }

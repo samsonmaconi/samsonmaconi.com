@@ -1,0 +1,74 @@
+.SkillsSection .carousel-cell {
+  width: 80%; }
+  .SkillsSection .carousel-cell svg, .SkillsSection .carousel-cell img {
+    filter: grayscale(100%); }
+    .SkillsSection .carousel-cell svg:hover, .SkillsSection .carousel-cell img:hover {
+      animation: getColor 100ms;
+      filter: grayscale(0%); }
+
+.SkillsSection .skill::before {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: .5em;
+  width: 0.5em;
+  height: 0.5em;
+  border-radius: 50%;
+  border-width: .15em;
+  margin-left: -0.3em;
+  border-style: solid; }
+
+.SkillsSection ul {
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+
+.SkillsSection .legendTitle {
+  font-variant: small-caps;
+  font-weight: bold;
+  text-decoration: underline; }
+
+.SkillsSection .legendItem {
+  font-variant: small-caps; }
+  .SkillsSection .legendItem::before {
+    content: "";
+    margin: 0.5em;
+    width: 0.7em;
+    height: 0.7em;
+    border-width: .15em;
+    border-style: solid;
+    font-size: .8em; }
+
+.SkillsSection .skillLevel-1::before {
+  border-color: #ffa600; }
+
+.SkillsSection .skillLevel-2::before {
+  border-color: #0000ff; }
+
+.SkillsSection .skillLevel-3::before {
+  border-color: #00ff00; }
+
+.SkillsSection #Legend {
+  position: absolute;
+  bottom: 0.25em;
+  left: 0.25em;
+  display: inline-block;
+  font-size: 0.8em;
+  padding: .5em;
+  background-color: #ffffffcc; }
+
+@keyframes getColor {
+  from {
+    filter: grayscale(100%); }
+  to {
+    filter: grayscale(0%); } }
+
+@media (max-width: 400px) {
+  .SkillsSection #Legend {
+    display: none; }
+  .SkillsSection .skill::before {
+    border: none; }
+  .SkillsSection .carousel-cell {
+    width: 100%; }
+    .SkillsSection .carousel-cell svg, .SkillsSection .carousel-cell img {
+      filter: grayscale(0%); } }

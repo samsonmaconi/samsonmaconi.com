@@ -1,0 +1,42 @@
+/* external css: flickity.css */
+.Slider{
+  .carousel-cell {
+    width: 100%;
+    margin-right: 10em;
+    padding: 1em;
+    background: transparent;
+    border-radius: 5px;
+    // border: solid #397071 1px;
+    counter-increment: carousel-cell;
+    &.is-selected{
+      text-align: center;
+    }
+  }
+
+  // /* dots are lines */
+  // .flickity-page-dots {
+  //   bottom: .03em;
+  //   // text-align: right;
+  //   & .dot {
+  //     height: 0.20em;
+  //     width: 5em;
+  //     margin: 0px;
+  //     border-radius: 0;
+  //     &:last-child{
+  //       margin-right: 1em;
+  //     }
+  //   }
+  //   & .dot.is-selected {
+  //     background: #930717;
+  //   }
+  // }
+
+  .flickity-prev-next-button {
+    width: 2em;
+    height: 2em;
+  }
+  // .flickity-enabled:focus .flickity-viewport {
+  //   outline: thin dotted;
+  //   outline: 1px auto -webkit-focus-ring-color;
+  // }
+}

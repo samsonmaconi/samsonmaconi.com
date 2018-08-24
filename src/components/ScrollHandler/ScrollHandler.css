@@ -1,0 +1,12 @@
+#scrolltotop {
+  display: none;
+  position: fixed;
+  bottom: 93px;
+  right: 0px;
+  z-index: 5000;
+  padding: 1em 0.5em;
+  text-align: center;
+  font-weight: 100;
+  vertical-align: middle;
+  border-radius: 25% 0 0 25%;
+  cursor: pointer; }
