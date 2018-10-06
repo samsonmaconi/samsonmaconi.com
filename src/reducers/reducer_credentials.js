@@ -10,8 +10,8 @@ export default () => {
 
         cv: {
             "Technology": {
-                "Day-to-day Comfort": ["Javascript", "HTML5", "SCSS / CSS", "SQL", "React", "NodeJS", "JQuery", "Bootstrap", "BABEL", "Version Control (GIT)", "MySQL", "Photoshop", "VSCode", "Webpack", "Gulp", "NPM", "MacOS", "Windows", "Ubuntu"],
-                "Experience with": ["MongoDB", "REDUX", "SVG", "PHP", "Java", ".NET", "Visual Studio", "Python (limited)", "Other Linux Distros"]
+                "Day-to-day Comfort": ["Javascript", "HTML5", "SCSS / CSS", "SQL", "React", "REDUX", "NodeJS", "JQuery", "Bootstrap", "BABEL", "Version Control (GIT)", "MySQL", "Photoshop", "VSCode", "Webpack", "Gulp", "NPM", "Java", "Android Studio", "MacOS", "Windows", "Ubuntu"],
+                "Experience with": ["MongoDB", "Amazon Web Services", "SVG", "PHP", ".NET", "Visual Studio", "Python", "Other Linux Distros"]
             },
             "Work Experience": [
                 ["Owner, Applications Developer", "samsonmaconi.com", "Jul 2018 - Present", "The goal in mind is to provide small businesses as well as recently established startups with well-thought websites and applications that conveys their unique brand or product and actually works. Primary code utilization for samsonmaconi.com includes ReactJS and SCSS, and Git for Version control.", "http://www.samsonmaconi.com"],
