@@ -32,7 +32,8 @@
                 animation-iteration-count: infinite;
             }
             .linkToolTip{
-                display: none;
+                // display: none;
+                visibility: hidden;
             }
         }
         .linkToolTip{
@@ -53,6 +54,6 @@
   
     to {
       opacity: 0.4;
-      transform: translate3d(10px, 0, 0);
+      transform: translate3d(3px, 0, 0);
     }
   }

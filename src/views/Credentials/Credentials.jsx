@@ -144,7 +144,7 @@ class Credentials extends React.Component {
             <div id="credentials" className="Credentials animated fadeIn">
      
                 <NavHeaderSub>
-                    <HeaderSub title="Dig a little deeper" tagline="My résumé for your perusal" buttonLink={["Download CV", "href", "https://s3.amazonaws.com/samsonmaconi.com/resume/Samson+Maconi+-+Re%CC%81sume%CC%81.pdf"]} />
+                    <HeaderSub title="Dig a little deeper" tagline="My résumé for your perusal" buttonLink={["Download Résumé", "href", "https://s3.amazonaws.com/samsonmaconi.com/resume/Samson+Maconi+-+Re%CC%81sume%CC%81.pdf"]} />
                 </NavHeaderSub>
 
                 <Section id="summary" className="summary d-none d-sm-block">
