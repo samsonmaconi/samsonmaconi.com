@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter, Switch, Route } from 'react-router-dom'
+import { BrowserRouter, Switch, Route, Redirect } from 'react-router-dom'
 import './App.css';
 import { Site, CoverPage } from '../../routes';
 
@@ -33,7 +33,10 @@ class App extends Component {
 
             <Route exact path='/' render={
               (props) => {
-                return (<CoverPage logo={this.state.logo} appTitle={this.state.appTitle} />);
+                return (
+                // <CoverPage logo={this.state.logo} appTitle={this.state.appTitle} />
+                <Redirect to="/home" />
+                );
               }
             } />
 
