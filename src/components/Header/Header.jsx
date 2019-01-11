@@ -30,7 +30,7 @@ export default class Header extends React.Component {
                     </div>
                 </div>
                 <div className="tagline d-flex flex-column flex-sm-row align-items-center">
-                    <span className="d-none d-md-block">Creative Thinker <span className="x">+</span> Applications Developer <span className="x d-none d-sm-inline"> + </span>Decent human being</span>
+                    <span className="d-none d-md-block">Creative Thinker <span className="x">+</span> Software Engineer <span className="x d-none d-sm-inline"> + </span>Decent human being</span>
                 </div>
                 <div className="mt-auto">
                     <a id="next_btn" className="next_btn animated pulse" onClick={() => {document.querySelector('#profileSection').scrollIntoView({ behavior: 'smooth' })}}><span className="fas fa-angle-down"></span></a>
