@@ -43,7 +43,7 @@ export default class SkillsSection extends React.Component {
                             }
                         </Slider>
                         <div id="Legend">
-                            <span className="legendTitle">Proficiency Legend</span>
+                            {/* <span className="legendTitle">Proficiency Legend</span> */}
                             <ul className="legend">
                                 <li className="legendItem skillLevel-1">Expert</li>
                                 <li className="legendItem skillLevel-2">Advanced</li>

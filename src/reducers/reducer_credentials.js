@@ -10,11 +10,12 @@ export default () => {
 
         cv: {
             "Technology": {
-                "Day-to-day Comfort": ["Javascript", "HTML5", "SCSS / CSS", "SQL", "React", "REDUX", "NodeJS", "JQuery", "Bootstrap", "Amazon Web Services", "PHP", "Version Control (GIT)", "MySQL", "Photoshop", "VSCode", "Webpack", "Gulp", "NPM", "Java", "Android Studio", "MacOS", "Windows", "Ubuntu"],
-                "Experience with": ["MongoDB", "SVG", ".NET", "Visual Studio", "Python"]
+                "Day-to-day Comfort": ["Javascript", "Typescript", "HTML5", "SCSS / CSS", "SQL", "React", "Angular", "REDUX", "NodeJS", "CI/CD", "JQuery", "Python", "Bootstrap", "Amazon Web Services", "Version Control (GIT)", "MySQL", "Photoshop", "VSCode", "Webpack", "Gulp", "NPM", "Java", "MacOS", "Windows", "Linux"],
+                "Experience with": ["Azure", "Visual Studio", "Google Web Toolkit", "PHP"]
             },
             "Work Experience": [
-                ["Owner, Applications Developer", "samsonmaconi.com", "Jul 2018 - Present", "The goal in mind is to provide small businesses as well as recently established startups with well-thought websites and applications that conveys their unique brand or product and actually works. Primary code utilization for samsonmaconi.com includes ReactJS and SCSS, and Git for Version control.", "http://www.samsonmaconi.com"],
+                ["Software Engineer", "Calabrio", "April 2020 - Present", "Calabrio One", "Vancouver, Canada"],
+                ["Owner, Software Developer", "samsonmaconi.com", "Jul 2018 - Present", "The goal in mind is to provide small businesses as well as recently established startups with well-thought websites and applications that conveys their unique brand or product and actually works. Primary code utilization for samsonmaconi.com includes ReactJS and SCSS, and Git for Version control.", "Everywhere"],
                 ["Portfolio Manager", "Guaranty Trust Bank Treasury", "Mar 2015 - Jul 2018", "After my National Youth Service Year, I secured a job with Guaranty Trust Bank as a Portfolio Manager in the bank’s Treasury. My primary responsibilities included, and were not limited to, Liquidity Management and Optimal utilisation of funds.", "Lagos, Nigeria"],
                 ["Website Developer and Content Manager", "Moke Zenith School of Excellence", "Nov 2012 - Nov 2013", "During my National Youth Service Year I had the privilege of working with a school in a rural community where I volunteered to develop a website for the school essentially for information dissemination.", "Ogun, Nigeria"],
                 ["IT Associate", "DBH Solutions", "Dec 2012 - Sep 2013", "I also worked with a Technology Consultancy firm, DBH Solutions during my National Youth Service Year. My primary responsibilities were Network and System Administration. I also provided project management support working with tools like MS-Visio and MS-Projects, and compilation of project proposal documents for prospective clients.", "Lagos, Nigeria"],

@@ -14,6 +14,7 @@ class Credentials extends React.Component {
         super(props);
         this.summary = this.props.summary;
         this.cv = this.props.cv;
+        this.elementToggle= {showWorkStory: false, showToggleRundown: false}
     }
 
 
@@ -97,18 +98,17 @@ class Credentials extends React.Component {
                         return (
                             <div key={key} className="col-12 col-md-8 p-3">
                                 <h5 className="text1">{item[0]}</h5>
-                                <p>
-                                    <span className="text2">{item[1]}</span>
-                                    <br className="d-inline d-sm-none" />
-                                    <span className="text2 d-none d-sm-inline">, </span>
-                                    <span className="text2">{item[2]}</span>
-                                </p>
-                                <p>
-                                    <span className="text3">{item[3]}</span>
-                                </p>
-                                <p>
-                                    <span className="text3"><i className="fas fa-map-marker-alt"></i> {item[4]}</span>
-                                </p>
+                                <span className="text2">{item[1]}</span>
+                                <br className="d-inline d-sm-none" />
+                                <span className="text2 d-none d-sm-inline">, </span>
+                                <span className="text3">{item[2]}</span>
+                                <br/>
+                                {this.elementToggle.showWorkStory &&
+                                    <p>
+                                        <span className="text3">{item[3]}</span>
+                                    </p>
+                                }
+                                <span className="text3"><i className="fas fa-map-marker-alt"></i> {item[4]}</span>
                             </div>
 
                         );
@@ -177,7 +177,7 @@ class Credentials extends React.Component {
                         <hr />
                     </div>
 
-                    <a id="toggleSummary" className="toggleSummary navtab" data-toggle="collapse" href="#summary_content">Toggle Rundown</a>
+                    {this.elementToggle.showToggleRundown && <a id="toggleSummary" className="toggleSummary navtab" data-toggle="collapse" href="#summary_content">Toggle Rundown</a>}
                 </Section>
 
                 <Section id="cv" className="cv" fluid={true}>

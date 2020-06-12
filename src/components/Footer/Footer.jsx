@@ -18,7 +18,7 @@ export default class Footer extends React.Component {
                                 <li className="nav-item"><a className="nav-link fab fa-facebook-f fa-lg" target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/samsonmaconi"></a></li>
                                 <li className="nav-item"><a className="nav-link fas fa fa-envelope fa-lg d-none d-md-block" href="mailto:hello@samsonmaconi.com"></a></li>
                             </ul>
-                            <p className="pt-3 text-center copyright mt-2 mb-0">© 2018 Made with <i id="love" className="fas fa-heart"></i> by <Link className="themepulse-hover" to="/about">Samson Maconi</Link>.</p>
+                            <p className="pt-3 text-center copyright mt-2 mb-0">© {new Date().getFullYear()} Made with <i id="love" className="fas fa-heart"></i> by <Link className="themepulse-hover" to="/about">Samson Maconi</Link>.</p>
                         </div>
                     </div>
 

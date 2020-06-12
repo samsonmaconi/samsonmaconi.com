@@ -20,10 +20,10 @@ export default () => {
 
         skillSet: {
             AppDev: {
-                "Frameworks & Libraries": [["React", "NodeJS", "JQuery", ".NET", "Bootstrap", "MongoDB", "BABEL"], [2, 2, 2, 3, 1, 2, 1]],
-                "Tools": [["Git", "MySQL", "VSCode", "Webpack", "Gulp", "NPM", "Visual Studio"], [2, 1, 1, 2, 2, 2, 2]],
-                "Programming Languages": [["Javascript", "PHP", "Python", "HTML", "SCSS", "CSS", "SQL", "Java"], [1, 2, 3, 1, 1, 1, 1, 2]],
-                "Operating Systems": [["MacOS", "Windows", "Ubuntu", "Linux"], [1, 1, 2, 3]]
+                "Frameworks & Libraries": [["React", "NodeJS", "JQuery", ".NET", "Bootstrap", "MongoDB", "BABEL"], [1, 1, 1, 3, 1, 2, 2]],
+                "Tools": [["Git", "MySQL", "VSCode", "Webpack", "Gulp", "NPM", "Visual Studio"], [1, 1, 1, 2, 2, 1, 1]],
+                "Programming Languages": [["Javascript", "PHP", "Python", "HTML", "SCSS", "CSS", "SQL", "Java"], [1, 2, 2, 1, 1, 1, 1, 2]],
+                "Operating Systems": [["MacOS", "Windows", "Ubuntu", "Linux"], [1, 1, 2, 1]]
             },
             Others: {
                 "Others": ["Photoshop", "Portfolio Management", "Swimming"]

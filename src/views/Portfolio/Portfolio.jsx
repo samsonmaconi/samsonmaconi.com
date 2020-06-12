@@ -37,7 +37,7 @@ export default class Portfolio extends React.Component {
         title: 'This website (samsonmaconi.com)',
         tech: 'React JS, JavaScript, AWS, HTML5, SASS, Git',
         description:
-          'This essentially was a project to gauge and improve my proficiency level working with several current software development technologies and JavaScript libraries; primarily React JS, SASS, AWS, and Git.',
+          'My website redesigned.',
         image: './img/portfolio/samsonmaconi.png',
         link: '#'
       }
