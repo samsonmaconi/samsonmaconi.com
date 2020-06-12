@@ -32,11 +32,11 @@ export default class Navbar extends Component {
                             <NavLink to="/about" activeClassName="active" className="nav-link">About</NavLink>
                         </li>
                         <li className="nav-item">
+                            <NavLink to="/portfolio" activeClassName="active" className="nav-link">Recent Projects</NavLink>
+                        </li>
+                        <li className="nav-item">
                             <NavLink to="/credentials" activeClassName="active" className="nav-link">Street Cred</NavLink>
                         </li>
-                        {/* <li className="nav-item">
-                            <NavLink to="/gallery" activeClassName="active" className="nav-link">Selfies et al.</NavLink>
-                        </li> */}
                         <li className="nav-item">
                             <NavLink to="/contact" activeClassName="active" className="nav-link">Contact</NavLink>
                         </li>

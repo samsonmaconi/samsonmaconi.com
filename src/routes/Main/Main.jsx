@@ -1,7 +1,7 @@
 import React from 'react';
 import { Route, Switch, Redirect } from 'react-router-dom';
 import './Main.css';
-import { Home, About, Credentials, Contact } from '../../views';
+import { Home, About, Credentials, Contact, Projects } from '../../views';
 
 class Main extends React.Component {
 
@@ -25,6 +25,7 @@ class Main extends React.Component {
                 <Switch>
                     <Route path={`${match.path}home`} exact component={Home} />
                     <Route path={`${match.path}about`} exact component={About} />
+                    <Route path={`${match.path}projects`} exact component={Projects} />
                     <Route path={`${match.path}credentials`} exact component={Credentials} />
                     <Route path={`${match.path}contact`} exact component={Contact} />
                     {/* <Redirect to={{

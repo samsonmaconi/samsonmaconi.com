@@ -4,7 +4,8 @@ import './Site.css';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
 import ScrollHandler from '../../components/ScrollHandler';
-import { Home, About, Credentials, Contact } from '../../views';
+import { Home, About, Credentials, Contact, Portfolio } from '../../views';
+import ReactGA from 'react-ga'; // Google Analytics
 
 export default class Site extends Component {
 
@@ -28,9 +29,16 @@ export default class Site extends Component {
         );
     }
 
+    // Google Analytics
+    initializeReactGA(page) {
+        ReactGA.initialize('UA-140135350-1');
+        ReactGA.pageview(page);
+    }
+
     render() {
 
         let { match, location } = this.props.routerData;
+        this.initializeReactGA(location.pathname); // Google Analytics
 
         return (
             <div className="Site">
@@ -39,6 +47,7 @@ export default class Site extends Component {
                 {/* <Main {...this.props.routerData} /> */}
                 <Route path={`${match.path}home`} exact component={Home}/>
                 <Route path={`${match.path}about`} exact component={About} />
+                <Route path={`${match.path}portfolio`} exact component={Portfolio} />
                 <Route path={`${match.path}credentials`} exact component={Credentials} />
                 <Route path={`${match.path}contact`} exact component={Contact} />
                 <Footer />

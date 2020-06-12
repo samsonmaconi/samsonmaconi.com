@@ -1,0 +1,7 @@
+.Portfolio .card {
+  background-color: bisque; }
+
+.Portfolio .flickity-page-dots {
+  bottom: .03em; }
+  .Portfolio .flickity-page-dots .dot.is-selected {
+    background: #000000; }
