@@ -14,7 +14,7 @@ export default () => {
                 "Experience with": ["Azure", "Visual Studio", "Google Web Toolkit", "PHP"]
             },
             "Work Experience": [
-                ["Owner, Software Developer", "samsonmaconi.com", "Jul 2018 - Present", "The goal in mind is to provide small businesses as well as recently established startups with well-thought websites and applications that conveys their unique brand or product and actually works. Primary code utilization for samsonmaconi.com includes ReactJS and SCSS, and Git for Version control.", "Everywhere"],
+                ["Freelance Software Developer", "samsonmaconi.com", "Jul 2012 - Present", "The goal in mind is to provide small businesses as well as recently established startups with well-thought websites and applications that conveys their unique brand or product and actually works. Primary code utilization for samsonmaconi.com includes ReactJS and SCSS, and Git for Version control.", "Everywhere"],
                 ["Software Engineer", "Calabrio", "April 2020 - Present", "Calabrio One", "Vancouver, Canada"],
                 ["JavaScript Developer", "Semios Bio Technologies", "September 2019 - Decenber 2019", "Semios Stuff", "Vancouver, Canada"],
                 ["Portfolio Manager", "Guaranty Trust Bank Treasury", "Mar 2015 - Jul 2018", "After my National Youth Service Year, I secured a job with Guaranty Trust Bank as a Portfolio Manager in the bank’s Treasury. My primary responsibilities included, and were not limited to, Liquidity Management and Optimal utilisation of funds.", "Lagos, Nigeria"],
