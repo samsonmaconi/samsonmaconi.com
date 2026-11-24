@@ -1,0 +1,27 @@
+.profile .ways-to-work {
+    border-left: 3px solid #17a2b8;
+    padding: 0.5rem 0 0.5rem 1.5rem;
+    .ways-title {
+        font-size: 0.85rem;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        margin-bottom: 1.25rem;
+    }
+    .way {
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 1.25rem;
+    }
+    .way-icon {
+        width: 2rem;
+        margin-top: 0.2rem;
+        color: #17a2b8;
+    }
+    .way-text {
+        display: block;
+        color: #55595c;
+    }
+    .way-link {
+        font-weight: 700;
+    }
+}

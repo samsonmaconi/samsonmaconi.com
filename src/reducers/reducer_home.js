@@ -2,14 +2,10 @@ export default () => {
     return {
         profile: [
             ["Name", "Samson Maconi"],
-            ["Birthdate", "1993-07-17"],
-            ["Birthplace", "Lagos, Nigeria"],
             ["Favorite Colour", "Teal"],
             ["Lucky Number", 17],
-            ["Choice Editor", "VS Code"],
-            ["Role", "Frontend Engineer"],
             ["Focus", "React, TypeScript & web performance"],
-            ["Open to", "Full-time roles & freelance projects"],
+            ["Open to", "Full-time, contract & freelance work"],
             ["Location", "Lagos, Nigeria"]
         ],
 
@@ -22,14 +18,13 @@ export default () => {
         ],
 
         skillSet: {
+            // [skills, proficiency]: 1 = Expert, 2 = Advanced, 3 = Intermediate. First three render large.
             AppDev: {
-                "Frameworks & Libraries": [["React", "NodeJS", "TypeScript", "GraphQL", "Angular", "JQuery", "MongoDB", "Web Vitals"], [1, 1, 1, 1, 2, 2, 2, 2]],
-                "Tools": [["Git", "MySQL", "VSCode", "Webpack", "Gulp", "NPM", "Visual Studio"], [1, 1, 1, 2, 2, 1, 1]],
-                "Programming Languages": [["Javascript", "PHP", "Python", "HTML", "SCSS", "CSS", "SQL", "Java"], [1, 2, 2, 1, 1, 1, 1, 2]],
-                "Operating Systems": [["MacOS", "Windows", "Ubuntu", "Linux"], [1, 1, 2, 1]]
-            },
-            Others: {
-                "Others": ["Photoshop", "Portfolio Management", "Swimming"]
+                "Frontend": [["React", "TypeScript", "GraphQL", "Next.js", "React Native", "NodeJS"], [1, 1, 1, 2, 2, 1]],
+                "Performance & Quality": [["Web Vitals", "Jest", "Playwright", "Accessibility", "Design Systems", "A/B Testing"], [1, 1, 2, 2, 1, 2]],
+                "AI-Assisted Development": [["Claude Code", "Copilot", "Cursor", "MCP", "Prompting", "Agents"], [2, 2, 2, 2, 2, 2]],
+                "Platforms & Tools": [["Git", "Azure", "Databricks", "VSCode", "NPM", "CI/CD"], [1, 2, 2, 1, 1, 2]],
+                "Languages": [["Javascript", "TypeScript", "HTML", "CSS", "Python", "SQL"], [1, 1, 1, 1, 2, 1]]
             }
         }
     }

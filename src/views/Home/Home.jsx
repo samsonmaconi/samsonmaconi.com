@@ -38,7 +38,7 @@ class Home extends React.Component {
                 <ImpactSection />
                 <QuotesSection quotes={this.quotes} backgroundImage="url('./img/img_bg_01.jpg')" />
                 <SkillsSection skillSet={this.skillSet} />
-                <ContactCall label="Contact Me" tagline="Let's build <span>something beautiful</span> together" />
+                <ContactCall label="Contact Me" tagline="Hiring or have a project? <span>Let's talk</span>" />
             </div>
         );
     }

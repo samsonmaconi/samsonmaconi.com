@@ -6,6 +6,7 @@ import Section from '../../components/Section';
 import Slider from '../../components/Slider';
 import ContactCall from '../../components/ContactCall';
 import { connect } from 'react-redux';
+import galleryImages from '../../config/gallery';
 
 class About extends React.Component {
 
@@ -19,13 +20,9 @@ class About extends React.Component {
     }
 
     render() {
-        let gallery_tags = [];
-        for (let index = 0; index <= 7; index++) {
-            gallery_tags.push(
-                <img key={index} className="rounded-circle img-fluid" src={`./img/gallery/img_gl_0${index}.jpg`} alt="My Slideshow" />
-            )
-
-        }
+        const gallery_tags = galleryImages.map((src, index) => (
+            <img key={index} className="rounded-circle img-fluid" src={src} alt="Samson Maconi" />
+        ));
         let illrather_tags = [];
         for (let index = 0; index <= 2; index++) {
             illrather_tags.push(
@@ -37,7 +34,7 @@ class About extends React.Component {
 
             <div id="about" className="About animated fadeIn">
             <NavHeaderSub>
-                <HeaderSub backgroundImage="" title="Hi! I am Sam" tagline="The devil's in the details" />
+                <HeaderSub backgroundImage="" title="Hi! I am Sam" tagline="Frontend engineer focused on fast, accessible interfaces" />
             </NavHeaderSub>
 
                 <Section id="Random" fluid={1} className="Random py-5" backgroundColor="light-gray">
@@ -96,7 +93,7 @@ class About extends React.Component {
                     </div>
                 </Section>
 
-                <ContactCall label="Say Hello" tagline="At this juncture, the polite thing to do is to <span>buy me a drink</span>" />
+                <ContactCall label="Say Hello" tagline="Got a role or a project in mind? <span>Let's talk</span>" />
 
             </div>
         );

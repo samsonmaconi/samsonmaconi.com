@@ -40,3 +40,21 @@ export const Graphql_SVG = () => {
         </svg>
     );
 }
+
+// Generic labelled tile for skills without a bundled logo (including AI tools).
+// Deliberately not brand marks: just the name on a coloured tile.
+export const Badge_SVG = ({ label, color = '#37474F' }) => {
+    const lines = label.split(' ');
+    const longest = Math.max(...lines.map(l => l.length));
+    const size = Math.min(30, Math.floor(108 / (longest * 0.6)));
+    const startY = 64 - ((lines.length - 1) * size * 1.15) / 2 + size * 0.35;
+    return (
+        <svg viewBox="0 0 128 128">
+            <title>{label}</title>
+            <rect width="128" height="128" rx="14" fill={color} />
+            {lines.map((line, i) => (
+                <text key={i} x="64" y={startY + i * size * 1.15} textAnchor="middle" fontFamily="Arial, Helvetica, sans-serif" fontWeight="700" fontSize={size} fill="#FFFFFF">{line}</text>
+            ))}
+        </svg>
+    );
+}

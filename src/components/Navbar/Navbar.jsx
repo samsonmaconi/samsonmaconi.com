@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
+import features from '../../config/features';
 import './Navbar.css';
 
 export default class Navbar extends Component {
@@ -31,9 +32,11 @@ export default class Navbar extends Component {
                         <li className="nav-item">
                             <NavLink to="/about" activeClassName="active" className="nav-link">About</NavLink>
                         </li>
-                        <li className="nav-item">
-                            <NavLink to="/portfolio" activeClassName="active" className="nav-link">Recent Projects</NavLink>
-                        </li>
+                        {features.showProjects && (
+                            <li className="nav-item">
+                                <NavLink to="/portfolio" activeClassName="active" className="nav-link">Recent Projects</NavLink>
+                            </li>
+                        )}
                         <li className="nav-item">
                             <NavLink to="/credentials" activeClassName="active" className="nav-link">Street Cred</NavLink>
                         </li>

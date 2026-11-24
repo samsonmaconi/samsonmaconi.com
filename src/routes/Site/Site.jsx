@@ -5,6 +5,7 @@ import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
 import ScrollHandler from '../../components/ScrollHandler';
 import { Home, About, Credentials, Contact, Portfolio } from '../../views';
+import features from '../../config/features';
 import ReactGA from 'react-ga'; // Google Analytics
 
 export default class Site extends Component {
@@ -47,7 +48,7 @@ export default class Site extends Component {
                 {/* <Main {...this.props.routerData} /> */}
                 <Route path={`${match.path}home`} exact component={Home}/>
                 <Route path={`${match.path}about`} exact component={About} />
-                <Route path={`${match.path}portfolio`} exact component={Portfolio} />
+                {features.showProjects && <Route path={`${match.path}portfolio`} exact component={Portfolio} />}
                 <Route path={`${match.path}credentials`} exact component={Credentials} />
                 <Route path={`${match.path}contact`} exact component={Contact} />
                 <Footer />

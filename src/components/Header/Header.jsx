@@ -34,7 +34,7 @@ export default class Header extends React.Component {
                     <span className="d-none d-md-block">Creative Thinker <span className="x">+</span> Software Engineer <span className="x d-none d-sm-inline"> + </span>Decent human being</span>
                 </div>
                 <div className="availability text-center">
-                    <p className="availability-label mb-2">Open to full-time roles <span className="x">&amp;</span> freelance projects</p>
+                    <p className="availability-label mb-2">Open to full-time, contract <span className="x">&amp;</span> freelance work</p>
                     <div className="d-flex flex-column flex-sm-row align-items-center justify-content-center">
                         <ButtonLink to="/credentials" label="I'm hiring" className="light" />
                         <ButtonLink to="/contact" label="I have a project" className="light" />

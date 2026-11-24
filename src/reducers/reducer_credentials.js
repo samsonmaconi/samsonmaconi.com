@@ -10,8 +10,8 @@ export default () => {
 
         cv: {
             "Technology": {
-                "Day-to-day Comfort": ["Javascript", "Typescript", "GraphQL (Apollo, Relay)", "Next.js", "React Native", "Jest", "Playwright", "Web performance (Core Web Vitals)", "Design systems", "Accessibility (WCAG)", "HTML5", "SCSS / CSS", "SQL", "React", "Angular", "REDUX", "NodeJS", "CI/CD", "JQuery", "Python", "Bootstrap", "Amazon Web Services", "Version Control (GIT)", "MySQL", "Photoshop", "VSCode", "Webpack", "Gulp", "NPM", "Java", "MacOS", "Windows", "Linux"],
-                "Experience with": ["Azure", "Visual Studio", "Google Web Toolkit", "PHP", "Databricks", "Statsig", "Prebid.js", "Google Ad Manager"]
+                "Day-to-day Comfort": ["Javascript", "Typescript", "React", "Next.js", "React Native", "NodeJS", "GraphQL (Apollo, Relay)", "Jest", "Playwright", "Web performance (Core Web Vitals)", "Design systems", "Accessibility (WCAG)", "HTML5", "SCSS / CSS", "SQL", "Python", "CI/CD", "Git", "AWS", "Claude Code", "Copilot", "Cursor", "MCP & agentic workflows"],
+                "Experience with": ["Azure", "Databricks", "Statsig", "Prebid.js", "Google Ad Manager", "Angular", "Redux", "PHP"]
             },
             "Work Experience": [
                 ["Engineering Senior Associate", "Atlassian", "Sep 2025 - Nov 2026", [
