@@ -5,7 +5,7 @@ export default () => {
             ["Favorite Colour", "Teal"],
             ["Lucky Number", 17],
             ["Focus", "React, TypeScript & web performance"],
-            ["Languages", "English (Full Professional), Yoruba (Native), French & Portuguese (Elementary)"],
+            ["Languages", "English (Full Professional), Yoruba (Native), French & Portuguese (Foundational)"],
             ["Timezone", "Pacific Time (Vancouver, BC)"],
             ["Open to", "Full-time, contract & freelance work"],
             ["Location", "Lagos, Nigeria"]
