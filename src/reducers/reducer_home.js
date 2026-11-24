@@ -7,6 +7,9 @@ export default () => {
             ["Favorite Colour", "Teal"],
             ["Lucky Number", 17],
             ["Choice Editor", "VS Code"],
+            ["Role", "Frontend Engineer"],
+            ["Focus", "React, TypeScript & web performance"],
+            ["Open to", "Full-time roles & freelance projects"],
             ["Location", "Lagos, Nigeria"]
         ],
 
@@ -20,7 +23,7 @@ export default () => {
 
         skillSet: {
             AppDev: {
-                "Frameworks & Libraries": [["React", "NodeJS", "JQuery", ".NET", "Bootstrap", "MongoDB", "BABEL"], [1, 1, 1, 3, 1, 2, 2]],
+                "Frameworks & Libraries": [["React", "NodeJS", "TypeScript", "GraphQL", "Angular", "JQuery", "MongoDB", "Web Vitals"], [1, 1, 1, 1, 2, 2, 2, 2]],
                 "Tools": [["Git", "MySQL", "VSCode", "Webpack", "Gulp", "NPM", "Visual Studio"], [1, 1, 1, 2, 2, 1, 1]],
                 "Programming Languages": [["Javascript", "PHP", "Python", "HTML", "SCSS", "CSS", "SQL", "Java"], [1, 2, 2, 1, 1, 1, 1, 2]],
                 "Operating Systems": [["MacOS", "Windows", "Ubuntu", "Linux"], [1, 1, 2, 1]]

@@ -3,8 +3,6 @@ import './About.css';
 import HeaderSub from '../../components/HeaderSub';
 import NavHeaderSub from '../../components/NavHeaderSub';
 import Section from '../../components/Section';
-import InstaFeed from '../../components/InstaFeed';
-import ButtonLink from '../../components/ButtonLink';
 import Slider from '../../components/Slider';
 import ContactCall from '../../components/ContactCall';
 import { connect } from 'react-redux';
@@ -98,27 +96,6 @@ class About extends React.Component {
                     </div>
                 </Section>
 
-                <Section id="Instagram" fluid={false} className="py-5">
-                    <div className="row pt-5">
-                        <div className="col">
-                            <h2 className="text-center p-3 themecolor1">Here's My Instagram Feed</h2>
-                        </div>
-                    </div>
-                    <div className="row">
-                        <div className="col">
-                            <InstaFeed
-                                userId={this.props.secret.userId}
-                                clientId={this.props.secret.clientId}
-                                accessToken={this.props.secret.accessToken}
-                            />
-                        </div>
-                    </div>
-                    <div className="row justify-content-center">
-                        <div className="col-auto p-5"><ButtonLink href="https://www.instagram.com/samsonmaconi/" label="Follow Me on Instagram" className="dark" />
-                        </div>
-                    </div>
-                </Section>
-
                 <ContactCall label="Say Hello" tagline="At this juncture, the polite thing to do is to <span>buy me a drink</span>" />
 
             </div>
@@ -129,8 +106,7 @@ class About extends React.Component {
 
 function mapStateToProps(state) {
     return {
-        favorites: state.about.favorites,
-        secret: state.secret.instagram
+        favorites: state.about.favorites
     }
 }
 

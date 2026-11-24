@@ -2,6 +2,7 @@ import React from 'react';
 import './Home.css';
 import Header from '../../components/Header';
 import ProfileSection from '../../components/ProfileSection';
+import ImpactSection from '../../components/ImpactSection';
 import QuotesSection from '../../components/QuotesSection';
 import SkillsSection from '../../components/SkillsSection';
 import ContactCall from '../../components/ContactCall';
@@ -17,11 +18,12 @@ class Home extends React.Component {
         super(props);
         this.nextElement = React.createRef();
 
-        this.profile = this.props.home.profile;
+        this.profile = this.props.home.profile.map(row => [...row]);
         this.quotes = this.props.home.quotes;
         this.skillSet = {...this.props.home.skillSet};
 
-        this.profile[6][1] = this.props.currentLocation;
+        const locationIndex = this.profile.findIndex(row => row[0] === "Location");
+        if (locationIndex !== -1) this.profile[locationIndex][1] = this.props.currentLocation;
     }
 
     componentDidMount() {
@@ -33,6 +35,7 @@ class Home extends React.Component {
             <div id="home" className="Home animated fadeIn">
                 <Header nextElement={this.nextElement} backgroundImage="url('./img/img_hd_00.jpg')" />
                 <ProfileSection forwardedRef={this.nextElement} profile={this.profile} />
+                <ImpactSection />
                 <QuotesSection quotes={this.quotes} backgroundImage="url('./img/img_bg_01.jpg')" />
                 <SkillsSection skillSet={this.skillSet} />
                 <ContactCall label="Contact Me" tagline="Let's build <span>something beautiful</span> together" />

@@ -18,7 +18,7 @@ class Contact extends React.Component {
 
             <div id="contact" className="Contact animated fadeIn">
                 <NavHeaderSub>
-                    <HeaderSub title="Send a Raven!" tagline="I'm currently available for freelance work" />
+                    <HeaderSub title="Send a Raven!" tagline="Open to full-time roles and freelance projects" />
                 </NavHeaderSub>
                 <Section id="contact_form" className="contact_form">
                     <ContactForm />

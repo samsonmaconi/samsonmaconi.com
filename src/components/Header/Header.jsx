@@ -1,5 +1,6 @@
 import React from 'react';
 import './Header.css';
+import ButtonLink from '../ButtonLink';
 
 export default class Header extends React.Component {
 
@@ -31,6 +32,13 @@ export default class Header extends React.Component {
                 </div>
                 <div className="tagline d-flex flex-column flex-sm-row align-items-center">
                     <span className="d-none d-md-block">Creative Thinker <span className="x">+</span> Software Engineer <span className="x d-none d-sm-inline"> + </span>Decent human being</span>
+                </div>
+                <div className="availability text-center">
+                    <p className="availability-label mb-2">Open to full-time roles <span className="x">&amp;</span> freelance projects</p>
+                    <div className="d-flex flex-column flex-sm-row align-items-center justify-content-center">
+                        <ButtonLink to="/credentials" label="I'm hiring" className="light" />
+                        <ButtonLink to="/contact" label="I have a project" className="light" />
+                    </div>
                 </div>
                 <div className="mt-auto">
                     <a id="next_btn" className="next_btn animated pulse" onClick={() => {document.querySelector('#profileSection').scrollIntoView({ behavior: 'smooth' })}}><span className="fas fa-angle-down"></span></a>

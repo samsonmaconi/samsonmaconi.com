@@ -40,3 +40,17 @@
         min-height: 350px;
     }
   }
+
+.Header .availability {
+    color: white;
+    margin-top: 2rem;
+    z-index: 1;
+    & .availability-label {
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        font-size: 0.85rem;
+    }
+    & .ButtonLink {
+        margin: 0.5rem 0.75rem;
+    }
+}

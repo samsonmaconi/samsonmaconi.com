@@ -14,7 +14,7 @@ class Credentials extends React.Component {
         super(props);
         this.summary = this.props.summary;
         this.cv = this.props.cv;
-        this.elementToggle= {showWorkStory: false, showToggleRundown: false}
+        this.elementToggle= {showWorkStory: true, showToggleRundown: false}
     }
 
 
@@ -103,11 +103,16 @@ class Credentials extends React.Component {
                                 <span className="text2 d-none d-sm-inline">, </span>
                                 <span className="text3">{item[2]}</span>
                                 <br/>
-                                {this.elementToggle.showWorkStory &&
-                                    <p>
-                                        <span className="text3">{item[3]}</span>
-                                    </p>
-                                }
+                                {this.elementToggle.showWorkStory && (
+                                    Array.isArray(item[3]) ?
+                                        <ul className="text3 workStory my-2">
+                                            {item[3].map((line, lineKey) => <li key={lineKey}>{line}</li>)}
+                                        </ul>
+                                        :
+                                        <p>
+                                            <span className="text3">{item[3]}</span>
+                                        </p>
+                                )}
                                 <span className="text3"><i className="fas fa-map-marker-alt"></i> {item[4]}</span>
                             </div>
 

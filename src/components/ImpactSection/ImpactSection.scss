@@ -1,0 +1,52 @@
+.ImpactSection {
+    background-color: #f8f9fa;
+    .stat-number {
+        font-weight: 700;
+        font-size: 3.5rem;
+        line-height: 1.1;
+        font-variant-numeric: tabular-nums;
+    }
+    .stat-label {
+        margin: 0.5rem auto 0;
+        max-width: 16rem;
+        font-size: 1.1rem;
+    }
+    .stat-source {
+        display: block;
+        margin-top: 0.25rem;
+        font-size: 0.8rem;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: #55595c;
+    }
+}
+
+.ImpactSection {
+    .companies-label {
+        font-size: 0.8rem;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        color: #55595c;
+    }
+    .company-logo {
+        height: 32px;
+        max-width: 160px;
+        filter: grayscale(100%);
+        opacity: 0.7;
+        transition: filter 200ms, opacity 200ms;
+        &:hover {
+            filter: grayscale(0%);
+            opacity: 1;
+        }
+    }
+    .company-name {
+        font-size: 1.5rem;
+        font-weight: 700;
+        letter-spacing: 1px;
+        color: #55595c;
+    }
+    .companies-note {
+        display: block;
+        color: #55595c;
+    }
+}
