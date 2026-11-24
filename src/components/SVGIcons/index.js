@@ -23,7 +23,35 @@ const BADGES = {
 };
 
 // Newer icons live in ExtraIcons.jsx; everything else falls through to the original set.
+// Skill name -> Simple Icons slug. Logo files are fetched into public/img/skills by scripts/fetch-skill-icons.sh;
+// any that are missing fall back to the bundled inline icons below.
+const LOGO_SLUGS = {
+    "react": "react", "typescript": "typescript", "graphql": "graphql", "next.js": "nextdotjs",
+    "react native": "react", "nodejs": "nodedotjs", "jest": "jest", "playwright": "playwright",
+    "claude code": "claude", "copilot": "githubcopilot", "cursor": "cursor", "mcp": "modelcontextprotocol",
+    "git": "git", "azure": "microsoftazure", "databricks": "databricks", "npm": "npm",
+    "javascript": "javascript", "html": "html5", "css": "css3", "python": "python"
+};
+
+class LogoImage extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = { failed: false };
+    }
+    render() {
+        if (this.state.failed) return this.props.fallback;
+        return <img className="img-fluid" src={`./img/skills/${this.props.file}.svg`} alt={this.props.name} title={this.props.name} onError={() => this.setState({ failed: true })} />;
+    }
+}
+
 export default function Icon({ icon }) {
+    const key = icon.toLowerCase();
+    const slug = LOGO_SLUGS[key];
+    if (slug) return <LogoImage file={key.replace(/[^a-z0-9]+/g, '-')} name={icon} fallback={renderInline(icon)} />;
+    return renderInline(icon);
+}
+
+function renderInline(icon) {
     const key = icon.toLowerCase();
     if (BADGES[key]) return <Badge_SVG label={BADGES[key][0]} color={BADGES[key][1]} />;
     switch (key) {
