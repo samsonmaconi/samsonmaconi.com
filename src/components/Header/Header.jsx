@@ -31,7 +31,7 @@ export default class Header extends React.Component {
                     </div>
                 </div>
                 <div className="tagline d-flex flex-column flex-sm-row align-items-center">
-                    <span className="d-none d-md-block">Creative Thinker <span className="x">+</span> Software Engineer <span className="x d-none d-sm-inline"> + </span>Web Performance Specialist</span>
+                    <span className="d-none d-md-block">Creative Thinker <span className="x">+</span> Software Engineer <span className="x d-none d-sm-inline"> + </span>Performance Nerd</span>
                 </div>
                 <div className="availability text-center">
                     <p className="availability-label mb-2">Open to full-time, contract <span className="x">&amp;</span> freelance work</p>
