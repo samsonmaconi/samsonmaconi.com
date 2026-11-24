@@ -19,3 +19,8 @@
   bottom: .03em; }
   .About .flickity-page-dots .dot.is-selected {
     background: #000000; }
+
+.About .photoslider img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover; }

@@ -7,6 +7,7 @@ import Section from '../../components/Section';
 import Accordion from '../../components/Accordion';
 import ContactCall from '../../components/ContactCall';
 import { connect } from 'react-redux';
+import features from '../../config/features';
 
 class Credentials extends React.Component {
 
@@ -149,7 +150,11 @@ class Credentials extends React.Component {
             <div id="credentials" className="Credentials animated fadeIn">
      
                 <NavHeaderSub>
-                    <HeaderSub title="Dig a little deeper" tagline="My résumé for your perusal" buttonLink={["Download Résumé", "href", "https://s3.amazonaws.com/samsonmaconi.com/resume/Samson+Maconi+-+Re%CC%81sume%CC%81.pdf"]} />
+                    <HeaderSub
+                        title="Dig a little deeper"
+                        tagline={features.showResumeDownload ? "My résumé for your perusal" : "Experience, education and skills"}
+                        buttonLink={features.showResumeDownload ? ["Download Résumé", "href", "https://s3.amazonaws.com/samsonmaconi.com/resume/Samson+Maconi+-+Re%CC%81sume%CC%81.pdf"] : undefined}
+                    />
                 </NavHeaderSub>
 
                 <Section id="summary" className="summary d-none d-sm-block">

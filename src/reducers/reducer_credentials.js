@@ -63,6 +63,7 @@ export default () => {
             "Language": [
                 ["English", "Full Professional Proficiency"],
                 ["French", "Elementary Proficiency"],
+                ["Portuguese", "Elementary Proficiency"],
                 ["Yoruba", "Native Proficiency"]
             ]
         }

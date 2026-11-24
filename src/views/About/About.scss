@@ -31,3 +31,9 @@
       }
     }
   }
+// Keep every slideshow image a circle, whatever its source dimensions.
+.About .photoslider img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+}

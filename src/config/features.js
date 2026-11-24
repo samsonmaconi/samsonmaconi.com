@@ -7,5 +7,7 @@ const flag = (envName, fallback) => {
 
 export default {
     // The "Recent Projects" page (nav link + route). Hidden for now.
-    showProjects: flag('REACT_APP_SHOW_PROJECTS', false)
+    showProjects: flag('REACT_APP_SHOW_PROJECTS', false),
+    // The "Download Résumé" button on the Credentials page.
+    showResumeDownload: flag('REACT_APP_SHOW_RESUME_DOWNLOAD', false)
 };
